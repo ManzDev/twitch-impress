@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Impress.js</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./js/impress.min.js" defer></script>
+  <script type="module">
+    const api = impress();
+    api.init();
+    window.api = api;
+  </script>
+</head>
+<body>
+
+  <div id="impress">
+
+    <div class="step slide" data-x="0" data-rotate="45">
+      <h2>Diapositiva 1</h2>
+      <img src="images/monoculo.gif" alt="Manz">
+    </div>
+
+    <div class="step slide" data-x="200" data-rotate-y="45">
+      <h2>Diapositiva 2</h2>
+      <img src="images/agua.gif" alt="Manz">
+    </div>
+
+    <div class="step" data-x="400" data-z="-200" data-rotate-y="90" data-rotate="45">
+      <h2>Diapositiva 3</h2>
+      <img src="images/knight.png" alt="Manz Knight">
+    </div>
+
+    <div class="step" data-x="500" data-y="500" data-z="-1500">
+      <h2>Diapositiva 4</h2>
+      <img src="images/manztrix.gif" alt="Manztrix">
+    </div>
+
+    <div class="step" data-x="1000" data-y="500" data-z="500">
+      <h2>Diapositiva 5</h2>
+      <img src="images/raid.gif" alt="Manz Raid">
+    </div>
+
+    <div class="step" data-x="1000" data-y="-500" data-z="-500">
+      <h2>Diapositiva 6</h2>
+      <img src="images/shrek.gif" alt="Manz Shrek">
+    </div>
+
+    <div id="overview"></div>
+
+  </div>
+
+  <div class="hint">Presiona los cursores para avanzar en las diapositivas</div>
+
+</body>
+</html>

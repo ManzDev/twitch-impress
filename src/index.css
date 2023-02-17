@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(#223, purple, indigo);
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.step {
+  transition: all 0.5s;
+}
+
+.past,
+.future {
+  filter: drop-shadow(0 0 0 transparent);
+  opacity: 1;
+}
+
+.present {
+  filter: drop-shadow(0 0 8px white);
+  opacity: 1;
+}
+
+.x10 {
+  scale: 10;
+  image-rendering: pixelated;
+}
+
+.hint {
+  font-size: 2rem;
+  position: absolute;
+  translate: 50% 50%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+body.impress-mouse-timeout .hint {
+  opacity: 1;
+}
